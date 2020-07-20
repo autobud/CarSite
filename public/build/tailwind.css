@@ -391,7 +391,8 @@ button {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img {
+img,
+iframe {
   display: block;
   vertical-align: middle;
 }
@@ -506,6 +507,10 @@ img {
 
 .border-2{
   border-width: 2px;
+}
+
+.border{
+  border-width: 1px;
 }
 
 .border-b{
