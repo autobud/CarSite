@@ -39,11 +39,6 @@ main {
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 /* Grouping content
    ========================================================================== */
 
@@ -242,7 +237,6 @@ button:-moz-focusring,
  */
 
 
-h1,
 h2,
 h3,
 p {
@@ -345,7 +339,7 @@ button {
   cursor: pointer;
 }
 
-h1,
+
 h2,
 h3 {
   font-size: inherit;
@@ -391,8 +385,7 @@ button {
  * https://github.com/mozdevs/cssremedy/issues/14
  */
 
-img,
-iframe {
+img {
   display: block;
   vertical-align: middle;
 }
@@ -435,6 +428,12 @@ img {
   .container{
     max-width: 1280px;
   }
+}
+
+@font-face {
+  font-family: 'Monoglyceride';
+
+  src: local('Monoglyceride'), url(/public/assets/MonoglycerideBold.woff) format('woff');
 }
 
 .bg-black{
@@ -509,10 +508,6 @@ img {
   border-width: 2px;
 }
 
-.border{
-  border-width: 1px;
-}
-
 .border-b{
   border-bottom-width: 1px;
 }
@@ -527,6 +522,10 @@ img {
 
 .hidden{
   display: none;
+}
+
+.flex-row{
+  flex-direction: row;
 }
 
 .flex-col{
@@ -721,8 +720,8 @@ img {
   padding-bottom: 1rem;
 }
 
-.relative{
-  position: relative;
+.pl-5{
+  padding-left: 1.25rem;
 }
 
 .shadow-lg{
@@ -791,8 +790,8 @@ img {
   letter-spacing: 0.025em;
 }
 
-.w-8{
-  width: 2rem;
+.w-40{
+  width: 10rem;
 }
 
 .w-4\/5{
@@ -878,6 +877,10 @@ img {
     font-size: 1.5rem;
   }
 
+  .md\:m-0{
+    margin: 0;
+  }
+
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
@@ -900,10 +903,6 @@ img {
 
   .lg\:text-4xl{
     font-size: 2.25rem;
-  }
-
-  .lg\:-mt-6{
-    margin-top: -1.5rem;
   }
 
   .lg\:px-4{

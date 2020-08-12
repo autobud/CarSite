@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
+
+@font-face {
+    font-family: 'Monoglyceride';
+    src: local('Monoglyceride'), url(/public/assets/MonoglycerideBold.woff) format('woff');
+}
+
 @tailwind utilities;
+
+.customfont {
+    font-family: 'Monoglyceride';
+}
 
